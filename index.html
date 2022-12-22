@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221124004046">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221222140934">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,21 +75,15 @@
 							</div>
 							<div class="main-content__item">
 								<div class="main-content__title">Check in</div>
-								<select name="form[]" data-class-modif="form">
-									<option value="1" selected>Sat, 17th Sep 2020</option>
-									<option value="2">Sun, 18th Sep 2020</option>
-									<option value="3">Mon, 19th Sep 2020</option>
-									<option value="4">Tue, 20th Sep 2020</option>
-								</select>
+								<label for="start">
+									<input type="date" id="start" name="trip-start" value="2022-12-01" min="2022-12-01" max="2023-12-01">
+								</label>
 							</div>
 							<div class="main-content__item">
 								<div class="main-content__title">Check out</div>
-								<select name="form[]" data-class-modif="form">
-									<option value="1" selected>Tue, 17th Oct 2020</option>
-									<option value="2">Wed, 18th Oct 2020</option>
-									<option value="3">Thu, 19th Oct 2020</option>
-									<option value="4">Fri, 20th Oct 2020</option>
-								</select>
+								<label for="end">
+									<input type="date" id="end" name="trip-end" value="2022-12-01" min="2022-12-01" max="2023-12-01">
+								</label>
 							</div>
 						</div>
 						<button type="submit" class="main-content__btn _icon-arrow"><span>Book Now</span></button>
@@ -151,7 +145,7 @@
 					</div>
 					<div class="offer-block__slider swiper">
 						<div class="offer-block__wrapper swiper-wrapper">
-							<div class="offer-block__slide swiper-slide offer-slide">
+							<a href="" class="offer-block__slide swiper-slide offer-slide">
 								<div class="offer-slide__image">
 									<picture><source srcset="img/offer/01.webp" type="image/webp"><img src="img/offer/01.png" alt="Lisbon photo"></picture>
 								</div>
@@ -173,8 +167,8 @@
 									<div class="offer-slide__price">From<span>€500</span></div>
 									<button type="button" class="offer-slide__btn button">Details</button>
 								</div>
-							</div>
-							<div class="offer-block__slide swiper-slide offer-slide">
+							</a>
+							<a href="" class="offer-block__slide swiper-slide offer-slide">
 								<div class="offer-slide__image">
 									<picture><source srcset="img/offer/02.webp" type="image/webp"><img src="img/offer/02.png" alt="Athens photo"></picture>
 								</div>
@@ -196,8 +190,8 @@
 									<div class="offer-slide__price">From<span>€800</span></div>
 									<button type="button" class="offer-slide__btn button">Details</button>
 								</div>
-							</div>
-							<div class="offer-block__slide swiper-slide offer-slide">
+							</a>
+							<a href="" class="offer-block__slide swiper-slide offer-slide">
 								<div class="offer-slide__image">
 									<picture><source srcset="img/offer/03.webp" type="image/webp"><img src="img/offer/03.png" alt="Rome photo"></picture>
 								</div>
@@ -219,7 +213,7 @@
 									<div class="offer-slide__price">From<span>€750</span></div>
 									<button type="button" class="offer-slide__btn button">Details</button>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 					<div class="offer-block__btn-mobile"></div>
@@ -270,18 +264,18 @@
 					</div>
 					<div class="planners-block__slider swiper">
 						<div class="planners-block__wrapper swiper-wrapper">
-							<div class="planners-block__slide swiper-slide">
+							<a href="" class="planners-block__slide swiper-slide">
 								<picture><source srcset="img/planners/01.webp" type="image/webp"><img src="img/planners/01.png" alt=""></picture>
-							</div>
-							<div class="planners-block__slide swiper-slide">
+							</a>
+							<a href="" class="planners-block__slide swiper-slide">
 								<picture><source srcset="img/planners/02.webp" type="image/webp"><img src="img/planners/02.png" alt=""></picture>
-							</div>
-							<div class="planners-block__slide swiper-slide">
+							</a>
+							<a href="" class="planners-block__slide swiper-slide">
 								<picture><source srcset="img/planners/03.webp" type="image/webp"><img src="img/planners/03.png" alt=""></picture>
-							</div>
-							<div class="planners-block__slide swiper-slide">
+							</a>
+							<a href="" class="planners-block__slide swiper-slide">
 								<picture><source srcset="img/planners/04.webp" type="image/webp"><img src="img/planners/04.png" alt=""></picture>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -456,13 +450,13 @@
 							<div class="footer__title">Contact Info</div>
 						</li>
 						<li class="footer-menu__item">
-							<div class="footer__text">+123 456 789</div>
+							<address class="footer__text"><a href="tel:+123 456 789">+123 456 789</a></address>
 						</li>
 						<li class="footer-menu__item">
-							<div class="footer__text">info@travellian.com</div>
+							<address class="footer__text"><a href="mailto: info@travellian.com">info@travellian.com</a></address>
 						</li>
 						<li class="footer-menu__item">
-							<div class="footer__text">1245, New Yourk, USA</div>
+							<address class="footer__text">1245, New Yourk, USA</address>
 						</li>
 					</ul>
 					<ul class="footer-menu__list">
@@ -493,7 +487,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20221124004046"></script>
+	<script src="js/app.min.js?_v=20221222140934"></script>
 </body>
 
 </html>
